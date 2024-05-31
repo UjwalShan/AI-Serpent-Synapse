@@ -1,0 +1,25 @@
+#NOTE: Mario game supports python3.8.10 in this project
+
+#to create python version specific virtual env
+C:\Users\HP\AppData\Local\Programs\Python\Python38\python.exe -m venv test
+
+#activate vitual env
+.\test\Scripts\activate
+
+#go to main directory
+cd .\MarioPPO-master\
+
+#installing requirements
+pip install -r requirements.txt
+
+#downloading Super Mario Bros. (World) nes file
+https://cdromance.org/nes-roms/super-mario-bros-world/
+
+#importing Super Mario Bros. (World) nes file
+python -m retro.import "C:\Users\HP\Documents\Mini Project\MarioRL-main\Super Mario Bros. (World)"
+
+#check the python interpreter bfore running directly from vs studios
+Ctrl+Shift+p and then select python 3.8.10 version
+
+#can visualize the results and graphs on tensorboard with command
+tensorboard --logdir "board"
